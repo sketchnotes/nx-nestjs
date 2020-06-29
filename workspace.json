@@ -15,13 +15,8 @@
             "main": "apps/app/src/main.tsx",
             "polyfills": "apps/app/src/polyfills.ts",
             "tsConfig": "apps/app/tsconfig.app.json",
-            "assets": [
-              "apps/app/src/favicon.ico",
-              "apps/app/src/assets"
-            ],
-            "styles": [
-              "apps/app/src/styles.scss"
-            ],
+            "assets": ["apps/app/src/favicon.ico", "apps/app/src/assets"],
+            "styles": ["apps/app/src/styles.scss"],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
           },
@@ -70,10 +65,7 @@
               "apps/app/tsconfig.app.json",
               "apps/app/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/app/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/app/**/*"]
           }
         },
         "test": {
@@ -108,13 +100,8 @@
           "builder": "@nrwl/linter:lint",
           "options": {
             "linter": "eslint",
-            "tsConfig": [
-              "apps/app-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/app-e2e/**/*"
-            ]
+            "tsConfig": ["apps/app-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/app-e2e/**/*"]
           }
         }
       }
@@ -132,9 +119,7 @@
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": [
-              "apps/api/src/assets"
-            ]
+            "assets": ["apps/api/src/assets"]
           },
           "configurations": {
             "production": {
@@ -164,10 +149,7 @@
               "apps/api/tsconfig.app.json",
               "apps/api/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/api/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/api/**/*"]
           }
         },
         "test": {
@@ -193,10 +175,7 @@
               "libs/core-gql/tsconfig.lib.json",
               "libs/core-gql/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/core-gql/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/core-gql/**/*"]
           }
         },
         "test": {
@@ -222,10 +201,7 @@
               "libs/database/tsconfig.lib.json",
               "libs/database/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/database/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/database/**/*"]
           }
         },
         "test": {
@@ -233,35 +209,6 @@
           "options": {
             "jestConfig": "libs/database/jest.config.js",
             "tsConfig": "libs/database/tsconfig.spec.json",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "auth": {
-      "root": "libs/auth",
-      "sourceRoot": "libs/auth/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/auth/tsconfig.lib.json",
-              "libs/auth/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/auth/**/*"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/auth/jest.config.js",
-            "tsConfig": "libs/auth/tsconfig.spec.json",
             "passWithNoTests": true
           }
         }
@@ -280,10 +227,7 @@
               "libs/authors/tsconfig.lib.json",
               "libs/authors/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/authors/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/authors/**/*"]
           }
         },
         "test": {
@@ -310,10 +254,7 @@
               "libs/api-shared/tsconfig.lib.json",
               "libs/api-shared/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/api-shared/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/api-shared/**/*"]
           }
         },
         "test": {
@@ -339,10 +280,7 @@
               "libs/posts/tsconfig.lib.json",
               "libs/posts/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/posts/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/posts/**/*"]
           }
         },
         "test": {
