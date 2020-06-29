@@ -1,0 +1,30 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Author {
+  id: ID!
+  nickname: String!
+  password: String!
+  salt: String!
+  role: Role!
+}
+
+enum Role {
+  TEACHER
+  STUDENT
+}
+
+type Query {
+  authors: [Author!]!
+}
+
+type Mutation {
+  createAuthor(input: CreateAuthorDto!): Author!
+}
+
+input CreateAuthorDto {
+  nickname: String!
+  password: String!
+  role: Role
+}
